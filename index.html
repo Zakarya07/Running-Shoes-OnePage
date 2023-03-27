@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="Logos/LOGO.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Tempit</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Nav -->
+            <nav>
+                <!-- Div that contain only the logo -->
+                <div class="logo_contain">
+                    <!-- Logo Image -->
+                    <a href=""><img src="Logos/LOGO.png" alt="logo" /></a>
+                </div>
+                <!-- Div that contain the ul element and his li elements -->
+                <div class="navigation_links">
+                    <!-- The list (ul) container -->
+                    <ul class="list_items">
+                        <!-- List items -->
+                        <li class="item"><a href="#">Home</a></li>
+                        <li class="item"><a href="#">Shoes</a></li>
+                        <li class="item"><a href="#">About</a></li>
+                        <li class="item cart_container">
+                            <!-- Made another ul in the big ul.list_items -->
+                            <ul class="checkout">
+                                <!-- List item that contain the card image -->
+                                <li class="card_icon item">
+                                    <!-- Make the card icon clickable placing it in a link tag (<a>) -->
+                                    <a href="#">
+                                        <!-- Card Icon/image -->
+                                        <img src="Images/shopping-cart-empty.png" alt="card_icon" />
+                                    </a>
+                                </li>
+                                <!-- Counter for the product number -->
+                                <li class="product_number">
+                                    <span class="counter">0</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Container of two parts (left side text and buttons) and (right side product image) -->
+            <section class="main_container_product_red">
+                <!-- Div that contains the text content -->
+                <div class="red_text_container">
+                    <!-- Title -->
+                    <h1 class="red_title">Truly Faster</h1>
+                    <!-- Subtitle -->
+                    <h3 class="red_subtitle">Break Through With High Speed</h3>
+                    <!-- Div that contains the buttons -->
+                    <div class="btn_container">
+                        <!-- Call to action buttons -->
+                        <a href="#">Shop Now</a>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <!-- Div that contains a big image of product -->
+                <div class="red_image_container">
+                    <div class="red_image_focus">
+                        <!-- Image in CSS with background property -->
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- Section that contain the fluo product -->
+        <section class="main_container_product_fluo">
+            <!-- Div that contains the text content -->
+            <div class="fluo_text_container">
+                <!-- Title -->
+                <h1 class="fluo_title">Air Boost</h1>
+                <!-- Subtitle -->
+                <h3 class="fluo_subtitle">The Spirit Of Speed</h3>
+                <!-- Some explanation of the product and specificity -->
+                <div class="explanation_container">
+                    <p class="explanation">You're In Good Hands With Nothing Similar</p>
+                    <p class="explanation">It's Time To Think About Feel Real Speed</p>
+                </div>
+                <!-- Price -->
+                <h2 class="product_price">PRICE:$199</h2>
+                <!-- Call to action button -->
+                <a href="#">Shop Now</a>
+            </div>
+            <!-- Div that contains a card with different colors available of product -->
+            <div class="fluo_image_container">
+                <!-- Card container -->
+                <div class="shoes_card">
+                    <!-- Container of the image-->
+                    <div class="fluo_image_focus">
+                        <!-- Image of the shoes -->
+                        <img src="Images/running_shoes_fluor.png" alt="shoes_fluo" />
+                    </div>
+                    <!-- Container for the colors options -->
+                    <div class="colors_container">
+                        <!-- Color option 1 -->
+                        <div class="combination_color_1">
+                            <div class="left_side"></div>
+                            <div class="right_side"></div>
+                        </div>
+
+                        <!-- Color option 2-->
+                        <div class="combination_color_2">
+                            <div class="left_side"></div>
+                            <div class="right_side"></div>
+                        </div>
+
+                        <!-- Color option 3 -->
+                        <div class="combination_color_3">
+                            <div class="left_side"></div>
+                            <div class="right_side"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <h1>Contact us</h1>
+            <div class="form_container">
+                <form action="index.php" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required/>
+                    <label for="message_content">Message</label>
+                    <textarea name="message_content" id="message_content" cols="30" rows="10" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="bg_clip_path"></div>
+            </div>
+        </footer>
+    </body>
+<script src="script.js"></script>
+</html>
